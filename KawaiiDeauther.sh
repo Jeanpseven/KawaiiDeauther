@@ -13,6 +13,7 @@ BK=$(tput setaf 0) # Black
 GR=$(tput setaf 2) # Green
 RD=$(tput setaf 1) # Red
 YW=$(tput setaf 3) # Yellow
+PK=$(tput setaf 5) # Pink
 CY=$(tput setaf 6) # Cyan
 WH=$(tput setaf 7) # White
 NT=$(tput sgr0) # Netral
@@ -31,14 +32,15 @@ function chk_root () {
 
 # Function for displaying banner
 function banner () {
-	printf "${BD}
-${GR}┊┊                  ${WH}╭━━━━━━
-${GR}┊┊┊┊${YW}╭━╱▔▔▔╲━╮${GR}┊┊${YW}☼   ${WH}╭╯${RD}KAWAII
-${GR}┊╱╲┊${YW}╰▏▆┊┊┊▇▕╯${GR}╱╲┊   ${WH}┃${RD}DEAUTHER ${NT}${CY}v1.2${BD}
-${GR}▔▔▔▔▔${YW}▏┊┊▇┊┊▕${GR}▔▔▔▔   ${WH}╰┳━━━━━━
-${GR}┈${YW}╱▔▔╱┊┊━┻━┊┊╲▔▔╲  ${WH}━━╯${YW}
-${GR}┈${YW}╲▂╱╭━━╮┊╭━━╮╲▂╱
-${GR}┈┈${YW}▔▔╰┻┻╯▔╰┻┻╯▔▔${GR}┈┈ ${RD}© 4WSec - 2020
+	printf "
+${PK}  _____  ______ _____   _____ ______ _____ 
+${PK} |  __ \|  ____|  __ \ / ____|  ____/ ____|
+${PK} | |  | | |__  | |  | | (___ | |__ | |     
+${PK} | |  | |  __| | |  | |\___ \|  __|| |     
+${PK} | |__| | |____| |__| |____) | |___| |____ 
+${PK} |_____/|______|_____/|_____/|______\_____|
+                                           
+                                           © Wrench DEDSEC - 2023
 
  ${NT}${WH}[${RD}!${WH}] I am not responsible for damage caused by ${BD}${GR}Kawaii Deauther${WH}${NT}.
      Attacking targets without prior mutual consent is ${BD}${RD}illegal${NT}!${BD}
